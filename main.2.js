@@ -52,10 +52,10 @@ function clickhandler(){
 
 
 
-// var btn = <button onClick={ clickhandler.bind(this) }>按钮</button>
+var btn = <button onClick={ clickhandler.bind(this) }>按钮</button>
 // var btn = <button>按钮</button>
 //创建一个按钮在这个页面上
-// ReactDOM.render(btn, document.getElementById('main'));
+ReactDOM.render(btn, document.getElementById('main'));
 
 
 // 原生js方法
@@ -63,22 +63,4 @@ function clickhandler(){
 //     console.log(this);  //这个this谁调用就是谁
 //     alert('我是中国人')
 // }
-
-import './main.css';
-
-import Styles from './Styles';
-
-var Style = require('./Styles');
-
-var div = <div style={Styles.divStyle}>我是中国人</div>
-// -----------------------------------
-// 还可以写成
-//写行内样式的话要写成 {js对象}
-// first
-// var div = <div style={{border:'1px solid red'}}>我是中国人</div>
-// second
-// var divStyle = {border:'1px solid red'};
-// var div = <div style={ divStyle }>我是中国人</div>
-// ---------------------------------------------------
-ReactDOM.render(div,document.getElementById('main'));
 
